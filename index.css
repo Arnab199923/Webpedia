@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(120deg, blue 50%,rgb(56, 1, 49) 50%);
+}
+
+.container .card{
+    height: 50%;
+    width: 40%;
+    background: linear-gradient(150deg, rgb(139, 247, 255) 40%,white 10%,rgb(151, 132, 255) 100%);
+}
+
+ .card .head{
+    height: 50%;
+    width: 50%;  
+}
+.head h1{
+    color:rgb(248, 20, 96);
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 4px black;
+    animation: move 5s infinite;
+}
+.card .text{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text input{
+    height: 100%;
+    width: 70%;
+    border-radius: 12px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card .buttons{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    height: 15%;
+    width: 20%;
+    border-radius: 8px;
+    outline: 0;
+    border: none;
+    margin: 15px;
+    background: linear-gradient(to right, blueviolet 20%, blue 100%);
+    color: #fff;
+    font-size: 25px;
+    transition: 400ms;
+}
+#reload{
+    background: #4afe;
+    border-radius: 12px;
+    color:#fff;
+    height: 40px;
+    width: 120px;
+    visibility: hidden;
+}
+button:hover{
+    cursor: pointer;
+    transform:scale(0.9);
+}
+
+@media only screen and (max-width: 500px) {
+    .container .card {
+        height: 50%;
+        width: 60%;
+    }
+    .text input {
+        margin-top: 130px;
+        width: 95%;
+    }
+    .buttons button {
+        width: 40%;
+    }
+    #reload {
+       height: 50px;
+       width: 150px;
+       font-size: 30px;
+    }
+  }
