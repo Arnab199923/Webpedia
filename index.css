@@ -81,21 +81,3 @@ button:hover{
     transform:scale(0.9);
 }
 
-@media only screen and (max-width: 500px) {
-    .container .card {
-        height: 50%;
-        width: 60%;
-    }
-    .text input {
-        margin-top: 130px;
-        width: 95%;
-    }
-    .buttons button {
-        width: 40%;
-    }
-    #reload {
-       height: 50px;
-       width: 150px;
-       font-size: 30px;
-    }
-  }
